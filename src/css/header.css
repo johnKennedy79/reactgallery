@@ -1,0 +1,29 @@
+.headercontainer {
+  width: 100%;
+  height: 80px;
+  color: black;
+  background-color: cornflowerblue;
+  box-shadow: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerimg {
+  height: 70px;
+  background: none;
+  margin-left: 1rem;
+}
+
+.headertitle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
+}
+.navbtn {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-decoration: none;
+  color: antiquewhite;
+  margin-right: 2rem;
+}

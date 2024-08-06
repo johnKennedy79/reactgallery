@@ -1,0 +1,38 @@
+.container {
+  width: 50vw;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+  margin-left: 25vw;
+  margin-top: 2rem;
+  place-content: center;
+}
+@property --bg-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: "<angle>";
+}
+
+@keyframes spin {
+  to {
+    --bg-angle: 360deg;
+  }
+}
+.img {
+  animation: spin 2s infinite linear;
+  height: 200px;
+  background: linear-gradient(
+        to bottom,
+        oklch(0.1 0.2 240 / 0.95),
+        oklch(0.1 0.2 240 / 0.95)
+      )
+      padding-box,
+    conic-gradient(
+        from var(--bg-angle) in oklch longer hue,
+        oklch(1 0.37 0) 0 0
+      )
+      border-box;
+
+  border: 6px solid transparent;
+}
